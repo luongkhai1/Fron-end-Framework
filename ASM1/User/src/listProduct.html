@@ -1,0 +1,85 @@
+<div class="container">
+      <marquee direction="right">
+            <h3 class="text-center mt-3">Khóa Học Lập Trình Binky</h3>
+      </marquee>
+      <div class="row ">
+            <div class="col-3 mt-3" ng-repeat="product in listproducts">
+                  <a href="#!dssp/{{product.id}}" style="text-decoration: none;" ng-click="goToDetails(product)">
+                        <div class="card">
+                              <div>
+                                    <span class="badge bg-danger float-end">-25%</span>
+                              </div>
+                              <img src="{{product.img}}" class="card-img-top" width="100" height="260">
+                              <div class="card-body" >
+                                    <h5 class="card-title d-flex justify-content-center" style="color: black;">{{product.name}}</h5>
+                                    <a style="opacity: 0.5; color: black; text-decoration: none;">Lương Duy
+                                          Khải</a><br>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i> <a
+                                          style="opacity: 0.5; color: black; text-decoration: none;">{{product.studying}}</a>
+                                    <br>
+                                    <a style="opacity: 0.5; color: black; text-decoration: none;">{{product.learned}}</a><br>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary float-start">Mua Khóa Học</a>
+                                    <div>
+                                          <del class="float-end" style="opacity: 0.5;">VNĐ 123.000</del>
+                                          <p class="float-end" style="margin-top: 20px; margin-right: -85px;">VNĐ
+                                                99.000</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </a>
+            </div>
+      </div>
+      <div class="row" >
+            <div class="col-3 mt-3" ng-repeat="product in listproducts1">
+                  <a href="#!details" style="text-decoration: none;" ng-click="goToDetails(product)">
+                        <div class="card">
+                              <div>
+                                    <span class="badge bg-danger float-end">-25%</span>
+                              </div>
+                              <img src="{{product.image}}" class="card-img-top" width="100" height="260">
+                              <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center" style="color: black;">{{product.tiitle}}</h5>
+                                    <a style="opacity: 0.5; color: black; text-decoration: none;">Lương Duy
+                                          Khải</a><br>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                          style="color: #FFD43B;"></i><i class="fa-regular fa-star"
+                                          style="color: #FFD43B;"></i> <a
+                                          style="opacity: 0.5; color: black; text-decoration: none;">{{product.studying}}</a>
+                                    <br>
+                                    <a style="opacity: 0.5; color: black; text-decoration: none;">{{product.learned}}</a><br>
+                                    <hr>
+                                    <a href="#" class="btn btn-primary float-start">Mua Khóa Học</a>
+                                    <div>
+                                          <del class="float-end" style="opacity: 0.5;">VNĐ 123.000</del>
+                                          <p class="float-end" style="margin-top: 20px; margin-right: -85px;">VNĐ
+                                                99.000</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </a>
+            </div>
+
+      </div>
+      <div class="container mt-3 ">
+            <a class="btn text-center"
+                  style="border-radius: 20px; border: 1px solid; margin-left: 550px; color: cadetblue;">Xem
+                  người đang học</a>
+      </div>
+      <div class="container-fluid">
+            <div class="col-12 text-center mt-4 bg-info" style="height: 150px; padding-top: 15px;">
+                  <h3 class="text-uppercase ">[Ưu Đãi Đăng Ký Combo]</h3>
+                  <p>Tiết kiệm 2.500.000đ khi đăng ký trọn bộ chương trình. Tặng domain hosting đưa dự án lên mạng đi
+                        tuyển dụng. Gói ưu đãi này sắp hết hạn, ưu tiên những ai đăng ký sớm!</p>
+                        <a class="btn text-center"
+                        style="border-radius: 20px; border: 1px solid;  color: cadetblue; background-color: rgb(216, 146, 40) !important;
+                        color: #fff;">Đầu Tư Combo</a>
+            </div>
+      </div>
+</div>

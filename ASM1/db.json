@@ -1,0 +1,96 @@
+{
+  "User": [
+    {
+      "id": "1",
+      "fullname": "Lương Duy khải",
+      "password": "1",
+      "adress": "Nam Định",
+      "age": "20",
+      "phone": "0763427983",
+      "role": "User"
+    },
+    {
+      "id": "2",
+      "fullname": "Lương Duy Khánh",
+      "password": "1",
+      "adress": "Hà Nội",
+      "age": "19",
+      "phone": "04237834",
+      "role": "Admin"
+    },
+    {
+      "id": "3",
+      "fullname": "Lương Khánh Phương",
+      "password": "1",
+      "adress": "Hà Nội",
+      "age": "18",
+      "phone": "04237834",
+      "role": "Admin"
+    }
+  ],
+  "Product": [
+    {
+      "id": "1",
+      "UserId": "2",
+      "name": "Lập trình java",
+      "img": "https://unitop.vn/admin/public/uploads/js-beginner1.png",
+      "details": "Lập trình java từ cơ bản đến nâng cao",
+      "time": "20 day",
+      "price": "99.000"
+    },
+    {
+      "id": "2",
+      "UserId": "3",
+      "name": "Lập trình T-SQL",
+      "img": "https://titv.vn/wp-content/uploads/2023/01/SQL.png",
+      "details": "Lập trình T-SQL 21 ngay",
+      "time": "21 day",
+      "price": "99.000"
+    },
+    {
+      "id": "28e2",
+      "UserId": "2",
+      "name": "TomCat",
+      "img": "https://titv.vn/wp-content/uploads/2023/01/Maven.png",
+      "details": "Java Tomcat",
+      "time": "29 day",
+      "price": "3432.76"
+    },
+    {
+      "id": "4992",
+      "name": "Full stack springboot",
+      "img": "https://titv.vn/wp-content/uploads/2023/07/lap-trinh-c-300-%C3%97-152-px.png",
+      "details": "Full stack java",
+      "time": "12 day",
+      "price": "34234",
+      "UserId": "3"
+    },
+    {
+      "id": "5348",
+      "name": "Lập trình mạng",
+      "img": "https://titv.vn/wp-content/uploads/2023/06/laptrinhmang-3.png",
+      "details": "Lập trình mạng cơ bản",
+      "time": "12 day",
+      "price": "1234",
+      "UserId": "2"
+    },
+    {
+      "id": "1200",
+      "name": "Databasse",
+      "img": "https://titv.vn/wp-content/uploads/2023/04/lap-trinh-c-300-%C3%97-152-px.png",
+      "details": "câu lệnh cơ bản",
+      "time": "34 day",
+      "price": "1234",
+      "UserId": "2"
+    },
+    {
+      "id": "2318",
+      "name": "Cấu trúc",
+      "img": "https://titv.vn/wp-content/uploads/2023/01/ctdl.png",
+      "details": "á",
+      "time": "afqee",
+      "price": "123123",
+      "UserId": "2"
+    }
+  ]
+}

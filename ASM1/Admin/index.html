@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="icon" type="image/png" href="../img/WEBU.jpg">
+      <link rel="stylesheet" href="/ASM1/User/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body ng-app="myApp">
+      <div class="container">
+            <div ng-include="'/ASM1/Admin/layout/_sitebar.html'">
+
+            </div>
+            <div ng-view>
+
+            </div>
+            <div ng-include="'/ASM1/Admin/layout/_footer.html'">
+
+            </div>
+      </div>
+
+
+      <script src="/ASM1/User/js/angular.min.js"></script>
+      <script src="/ASM1/User/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+      <script src="/ASM1/User/js/angular-route.min.js"></script>
+      <script src="./admin.js"></script>
+      <script src="./Product.js"></script>
+      <script src="./UpdateProduct.js"></script>
+      <script src="./UpdateUser.js"></script>
+
+      <script>
+            var myapp = angular.module("myApp", ["ngRoute"])
+            myapp.config(function ($routeProvider) {
+                  $routeProvider
+                        .when("/", {
+                              templateUrl: "admin.html",
+                              controller: myCtrl
+                        })
+                        .when("/QlNguoiDung", {
+                              templateUrl: "admin.html",
+                              controller: myCtrl
+                        })
+                        .when("/QlNguoiDung/:id", {
+                              templateUrl: "admin.html",
+                              controller: updateUser
+                        })
+                        .when("/Qlsanpham", {
+                              templateUrl: "Product.html",
+                              controller: controllerSanPham
+                        })
+                        .when("/Qlsanpham/:id", {
+                              templateUrl: "Product.html",
+                              controller: UpdateProduct
+                        })
+            })
+      </script>
+</body>
+
+</html>

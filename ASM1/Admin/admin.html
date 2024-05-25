@@ -1,0 +1,66 @@
+<div>
+      <h1 class="text-center">Danh sách Người Dùng</h1>
+      <div class="form">
+            <div>
+                  <label class="form-label">Họ và tên</label>
+                  <input type="text" class="form-control" ng-model="User.fullname" ng-change="changeBody()">
+                  <span ng-show="validate.fullnameValidate" style="color: red;">Vui lòng nhập họ và tên</span>
+            </div>
+            <div>
+                  <label class="form-label">Địa chỉ</label>
+                  <input type="text" class="form-control" ng-model="User.adress" ng-change="changeBody()">
+                  <span ng-show="validate.adressValidate" style="color: red;">Vui lòng nhập địa chỉ</span>
+            </div>
+            <div>
+                  <label class="form-label">Tuổi</label>
+                  <input type="text" class="form-control" ng-model="User.age" ng-change="changeBody()">
+                  <span ng-show="validate.ageValidate"style="color: red;">Vui lòng nhập tuổi</span>
+            </div>
+            <div>
+                  <label class="form-label">Số Điện Thoại</label>
+                  <input type="text" class="form-control" ng-model="User.phone" ng-change="changeBody()">
+                  <span ng-show="validate.phoneValidate"style="color: red;">Vui lòng nhập số điện thoại</span>
+            </div>
+            <div>
+                  <label class="form-label">Vai Trò</label>
+                  <div> <input type="radio" name="role" id="admin" value="Admin" ng-model="User.role"
+                              ng-change="changeBody()"> <label for="admin">admin</label></div>
+                  <div><input type="radio" name="role" id="user" value="User" ng-model="User.role"
+                              ng-change="changeBody()">
+                        <label for="user"> User</label>
+                  </div>
+                  <span ng-show="validate.roleValidate"style="color: red;">Vui lòng chọn vai trò</span>
+            </div>
+            <div class="mt-4">
+                  <button class="btn btn-info" ng-click="save()">Lưu</button>
+                  <a href="#!/QlNguoiDung/{{st.id}}" class="btn btn-warning" ng-click="update()">Sửa</a>
+            </div>
+      </div>
+      <div class="table mt-5">
+            <table class="table">
+                  <thead>
+                        <tr>
+                              <th>Họ và tên</th>
+                              <th>Địa chỉ</th>
+                              <th>Tuổi</th>
+                              <th>Số Điện Thoại</th>
+                              <th>Vai trò</th>
+                              <th>Hành động</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr ng-repeat="st in listUser">
+                              <td>{{st.fullname}}</td>
+                              <td>{{st.adress}}</td>
+                              <td>{{st.age}}</td>
+                              <td>{{st.phone}}</td>
+                              <td>{{st.role}}</td>
+                              <td>
+                                    <a href="#!/QlNguoiDung/{{st.id}}" class="btn btn-warning" ng-click="update()">Edit</a>
+                                    <button class="btn btn-danger" ng-click="delete(st.id)">Xóa</button>
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+      </div>
+</div>
